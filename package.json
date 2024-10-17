@@ -1,0 +1,23 @@
+{
+  "name": "vike-elysia-sample",
+  "type": "module",
+  "scripts": {
+    "dev": "bun elysia-entry.ts"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@vue/compiler-sfc": "^3.5.12",
+    "@vue/server-renderer": "^3.5.12",
+    "elysia": "^1.1.22",
+    "elysia-vite-server": "^0.0.1",
+    "vike": "^0.4.199",
+    "vike-vue": "^0.8.5",
+    "vite": "^5.4.9",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.6",
+    "sass": "^1.80.1",
+    "sass-loader": "^16.0.2"
+  }
+}
