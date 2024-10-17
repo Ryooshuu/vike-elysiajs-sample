@@ -53,6 +53,13 @@ async function main() {
     })
   );
 
+  // Error Handler
+  app.onError(({ error }) => {
+    
+    // Replace with your custom logger or add Sentry here.
+    console.error(error);
+  });
+
   // API Routes
   app.use(appController);
 
