@@ -1,12 +1,6 @@
-import type { Config } from "vike/types";
 import vikeVue from "vike-vue/config";
-
-// Problem line
-import Layout from "~/layouts/LayoutDefault.vue";
+import type { Config } from "vike/types";
 
 export default {
-  Layout,
-
-  title: "Scarlet",
-  extends: vikeVue as typeof vikeVue
+  extends: vikeVue,
 } satisfies Config;
