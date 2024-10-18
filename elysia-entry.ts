@@ -17,14 +17,14 @@ async function main() {
 
   // Vite Middleware (Development) and Static Assets (Production)
   app.use(vite({
-      static: {
-        assets: `${root}/dist/client`,
-        alwaysStatic: false,
+    static: {
+      assets: `${root}/dist/client`,
+      alwaysStatic: false,
       noCache: true
-      },
-      vite: {
-        root,
-        server: { middlewareMode: true },
+    },
+    vite: {
+      root,
+      server: { middlewareMode: true },
     }
   }));
 
@@ -55,7 +55,6 @@ async function main() {
 
   // Error Handler
   app.onError(({ error }) => {
-    
     // Replace with your custom logger or add Sentry here.
     console.error(error);
   });
