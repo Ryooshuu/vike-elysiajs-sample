@@ -8,5 +8,8 @@
 </template>
 
 <style lang="scss">
-/* todo */
+body {
+  background-color: black;
+  color: white;
+}
 </style>
